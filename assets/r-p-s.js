@@ -1,4 +1,4 @@
-// let playerSelection = prompt('Your choice','');
+let playerSelection = prompt('Your choice','');
 let randomNumber = Math.random();
 
  function getComputerChoice() {
@@ -15,7 +15,22 @@ let randomNumber = Math.random();
     }
  }
 
- console.log(getComputerChoice());
- console.log(randomNumber);
+ function playRound(playerSelection,computerSelection){
+    if (playerSelection = 'paper' ){
+
+return `You lose!  ${computerSelection} beats paper`;
+    }
+   else if (playerSelection = 'rock' ){
+
+return `You lose!  ${computerSelection} beats rock`;
+    }
+    else if (playerSelection = 'scissors' ){
+
+return `You lose! ${computerSelection} beats scissors`;
+    }
+else if (computerSelection = playerSelection){
+    return 'you tied';
+}
+ }
 
 
