@@ -3,14 +3,14 @@ let randomNumber = Math.random();
 
  function getComputerChoice() {
   
-    if ( 0 < randomNumber < 0.3){
+    if ( randomNumber >= 0 && randomNumber < 1 /3){
     
     return  'rock';
     }
-    else if (0.3 <= randomNumber <= 0.6){
+    else if (randomNumber >= 1 /3 && randomNumber < 2 / 3){
         return 'paper';
     }
-    else {
+    else if (randomNumber >= 2 / 3 && randomNumber < 1) {
         return 'scissors';
     }
  }
