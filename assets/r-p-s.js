@@ -13,29 +13,33 @@ let randomNumber = Math.random();
     else if (randomNumber >= 2 / 3 && randomNumber < 1) {
         return 'scissors';
     }
- }
+ 
 
- function playRound(playerSelection,computerSelection){
-    if (playerSelection = prompt('Your choice','') ){
+function playGame (){
+
+for (i=1; i <= 5; i++){
+
+function playRound(playerSelection,computerSelection){
+   if (playerSelection = prompt('Your choice','') ){
 
 return `You lose!  ${computerSelection} beats ${playerSelection}`;
-    }
-   else if (playerSelection = 'rock' ){
+   }
+  else if (playerSelection = 'rock' ){
 
 return `You lose!  ${computerSelection} beats ${playerSelection}`;
-    }
-    else if (playerSelection = 'scissors' ){
+   }
+   else if (playerSelection = 'scissors' ){
 
 return `You lose! ${computerSelection} beats ${playerSelection}`;
-    }
+   }
 else if (computerSelection = playerSelection){
-    return 'you tied';
+   return 'you tied';
+}
+}
+
+const playerSelection = prompt('Your choice',''); 
+const computerSelection = getComputerChoice();
+console.log(playRound(playerSelection,computerSelection));
+}
 }
  }
-
- 
- const computerSelection = getComputerChoice();
- console.log(playRound(playerSelection,computerSelection));
-
-
-
