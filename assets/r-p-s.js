@@ -14,4 +14,15 @@ else if (randomNumber >= 2 / 3 && randomNumber < 1){
 
 }
 
-console.log(getComputerChoice());
+function playRound( playerSelection , computerSelection){
+    return  `You lose! ${playerSelection } beats ${ computerSelection}`;
+
+
+}
+
+    const playerSelection = 'rock';
+    const computerSelection = getComputerChoice();
+
+   
+
+console.log(playRound(playerSelection , computerSelection));
