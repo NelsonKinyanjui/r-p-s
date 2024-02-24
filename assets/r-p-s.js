@@ -12,6 +12,14 @@ function getComputerChoice(){
     }
 }
 
+function playRound(playerSelection , computerSelection){
+    return `You lose! ${playerSelection} beats ${computerSelection}`;
+
+}
+const playerSelection = 'paper';
+const computerSelection = getComputerChoice();
+
+console.log(playRound(playerSelection , computerSelection));
     
 
 
