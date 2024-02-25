@@ -15,7 +15,7 @@ function getComputerChoice(){
 
 function playGame(){
    
-    for (i = 0; i < 5; i++){
+
         function playRound(playerSelection , computerSelection){
             return `You lose! ${playerSelection} beats ${computerSelection}`;
         
@@ -23,7 +23,7 @@ function playGame(){
         const playerSelection = 'paper';
         const computerSelection = getComputerChoice();
 
-    }
+
 }
 console.log(playGame());
 
