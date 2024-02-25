@@ -1,5 +1,4 @@
 let randomNumber = Math.random();
-
 function getComputerChoice(){
     if (randomNumber > 0 && randomNumber < 1 / 3){
         return 'rock';
@@ -12,15 +11,21 @@ function getComputerChoice(){
     }
 }
 
-function playRound(playerSelection , computerSelection){
-    return `You lose! ${playerSelection} beats ${computerSelection}`;
 
+
+function playGame(){
+   
+    for (i = 0; i < 5; i++){
+        function playRound(playerSelection , computerSelection){
+            return `You lose! ${playerSelection} beats ${computerSelection}`;
+        
+        }
+        const playerSelection = 'paper';
+        const computerSelection = getComputerChoice();
+
+    }
 }
-const playerSelection = 'paper';
-const computerSelection = getComputerChoice();
-
-console.log(playRound(playerSelection , computerSelection));
-    
+console.log(playGame());
 
 
 
