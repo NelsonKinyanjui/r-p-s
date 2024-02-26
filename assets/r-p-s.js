@@ -16,7 +16,7 @@ function getComputerChoice(){
             return `You lose! ${playerSelection} beats ${computerSelection}`;
             
         }
-        const playerSelection =prompt('your choice','');
+        const playerSelection =prompt('your choice','').toLocaleLowerCase();
         const computerSelection = getComputerChoice();
         
   console.log(playRound(playerSelection , computerSelection));
