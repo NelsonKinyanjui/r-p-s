@@ -13,5 +13,15 @@
     }
 
  }
- console.log(getComputerChoice());
+ function playRound(playerSelection , computerSelection){
+    if (playerSelection === 'paper'){
+        
+    }
+
+ }
+ const playerSelection = prompt("your choice","")
+
+ const computerSelection = getComputerChoice();
+
+ console.log(playRound(playerSelection , computerSelection));
 
