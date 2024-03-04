@@ -45,9 +45,9 @@
     }
 
  }
- const playerSelection = prompt("your choice","")
-
  const computerSelection = getComputerChoice();
+ const playerSelection = prompt("your choice","")
+ 
 
- console.log(playRound(playerSelection , computerSelection));
+ console.log(playRound(playerSelection ,computerSelection));
 
