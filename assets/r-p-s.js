@@ -74,9 +74,7 @@
  const playerSelection = prompt("your choice","")
  
 
- 
-
-
+//  to figure out how to out-put score and console.log it
  
  function playGame (){
     
