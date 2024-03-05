@@ -13,8 +13,29 @@
     }
 
  }
+
+ function scoreBoard(){
+
+    let computerScore = 0;
+    let playerScore = 0;
+
+    if (computerScore > playerScore ){
+        console.log(computerScore);
+        console.log('Computer Wins You Lose, good luck next time');
+
+    }
+    else if (playerScore > computerScore){
+        console.log(playerScore);
+        console.log('You Win Bravo!')
+    }
+
+    else{
+        console.log('A tie')
+    }
+ }
  function playRound(playerSelection , computerSelection){
     if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'rock'){
+        playerScore ++;
         return `You win! ${playerSelection} beats ${computerSelection}.`;
     }
     else if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'scissors'){
@@ -50,4 +71,11 @@
  
 
  console.log(playRound(playerSelection ,computerSelection));
+
+
+ 
+ function playGame (){
+    
+
+ }
 
