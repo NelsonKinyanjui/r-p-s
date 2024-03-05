@@ -13,11 +13,11 @@
     }
 
  }
-
- function scoreBoard(){
-
     let computerScore = 0;
     let playerScore = 0;
+ function scoreBoard(computerScore ,playerScore){
+
+    
 
     if (computerScore > playerScore ){
         console.log(computerScore);
@@ -29,9 +29,6 @@
         console.log('You Win Bravo!')
     }
 
-    else{
-        console.log('A tie')
-    }
  }
  function playRound(playerSelection , computerSelection){
     if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'rock'){
@@ -39,7 +36,9 @@
         return `You win! ${playerSelection} beats ${computerSelection}.`;
     }
     else if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'scissors'){
+        computerScore ++;
         return `You lose! ${computerSelection} beats ${playerSelection}.`;
+        
     }
     else if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'paper'){
         return "A tie!";
@@ -49,9 +48,12 @@
          
     }
     else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper'){
+        computerScore ++;
         return `You Lose! ${playerSelection} beats ${computerSelection}.`;
+        
     }
     else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'scissors'){
+        playerScore ++;
          return `You win! ${playerSelection} beats ${computerSelection}.`;
     }
     
@@ -59,9 +61,11 @@
         return "A tie!";
     }
     else if (playerSelection.toLowerCase() === 'scissors' && computerSelection === 'rock'){
+        computerScore ++;
         return `You lose! ${computerSelection} beats ${playerSelection}.`;
     }
     else if (playerSelection.toLowerCase() === 'scissors' && computerSelection === 'paper'){
+        playerScore ++;
         return `You win! ${playerSelection} beats ${computerSelection}.`;
     }
 
@@ -70,12 +74,20 @@
  const playerSelection = prompt("your choice","")
  
 
- console.log(playRound(playerSelection ,computerSelection));
+ 
 
 
  
  function playGame (){
     
+    for(i=0; i < 6; i++){
+        scoreBoard(computerScore , playerScore);
+        playRound(playerSelection , computerSelection);
+
+    }
+    
+   
 
  }
+ console.log(playGame());
 
