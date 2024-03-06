@@ -31,6 +31,11 @@
 
  }
  function playRound(playerSelection , computerSelection){
+
+    const playerSelection = prompt("your choice","")
+
+    let computerSelection = getComputerChoice();
+
     if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'rock'){
         playerScore ++;
         return `You win! ${playerSelection} beats ${computerSelection}.`;
@@ -70,14 +75,8 @@
     }
 
  }
- const computerSelection = getComputerChoice();
- const playerSelection = prompt("your choice","")
 
- const btn = document.querySelectorAll('.btn');
- btn.forEach(onclick => {
-    playRound(playerSelection , computerSelection)
-    
- });
+ 
  const output = document.querySelector('.output');
  
  
