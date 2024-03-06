@@ -72,6 +72,14 @@
  }
  const computerSelection = getComputerChoice();
  const playerSelection = prompt("your choice","")
+
+ const btn = document.querySelectorAll('.btn');
+ btn.forEach(onclick => {
+    playRound(playerSelection , computerSelection)
+    
+ });
+ const output = document.querySelector('.output');
+ 
  
 
 //  to figure out how to out-put score and console.log it.
