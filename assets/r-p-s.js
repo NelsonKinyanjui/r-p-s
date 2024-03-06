@@ -74,18 +74,18 @@
  const playerSelection = prompt("your choice","")
  
 
-//  to figure out how to out-put score and console.log it
+//  to figure out how to out-put score and console.log it.
  
- function playGame (){
+/*function playGame (){
     
     for(i=0; i < 6; i++){
         scoreBoard(computerScore , playerScore);
         playRound(playerSelection , computerSelection);
 
-    }
+    } 
     
    
 
  }
  console.log(playGame());
-
+*/
